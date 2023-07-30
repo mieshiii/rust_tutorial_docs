@@ -1,0 +1,7 @@
+Integer type 
+ - Signed and unsigned refer to whether it’s possible for the number to be negative—in other words, whether the number 
+ needs to have a sign with it (signed) or whether it will only ever be positive and can therefore be represented 
+ without a sign (unsigned). 
+ - Integer overflow -    variable of type u8 that can hold values between 0 and 255. 
+ If you try to change the variable to a value outside that range, such as 256, integer overflow will occur
+ - 
