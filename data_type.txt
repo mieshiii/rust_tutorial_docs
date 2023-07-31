@@ -4,4 +4,7 @@ Integer type
  without a sign (unsigned). 
  - Integer overflow -    variable of type u8 that can hold values between 0 and 255. 
  If you try to change the variable to a value outside that range, such as 256, integer overflow will occur
- - 
+Floating-Point Types
+ - Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size
+ - numeric operations: additions, subtraction, multiplication, division, remainder
+ 
