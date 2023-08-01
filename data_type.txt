@@ -7,4 +7,7 @@ Integer type
 Floating-Point Types
  - Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size
  - numeric operations: additions, subtraction, multiplication, division, remainder
- 
+Boolean Types
+ - bool:true or false
+Character Types
+ - char
