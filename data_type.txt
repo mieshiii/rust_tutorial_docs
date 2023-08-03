@@ -8,6 +8,28 @@ Floating-Point Types
  - Rust’s floating-point types are f32 and f64, which are 32 bits and 64 bits in size
  - numeric operations: additions, subtraction, multiplication, division, remainder
 Boolean Types
- - bool:true or false
+ - let f bool:true or false
 Character Types
  - char
+ - fn main() {
+    let c = 'z';
+    let z: char = 'ℤ'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+}
+Compound Types - Tuple and Array
+Tuple Types
+ - let tup: (i32, f64, u8) = (500, 6.4, 1);
+ - destructuring: 
+  fn main() {
+    let tup = (500, 6.4, 1);
+
+    let (x, y, z) = tup;
+
+    println!("The value of y is: {y}");
+  }
+Array Types
+ - let a = [1, 2, 3, 4, 5];
+ - array typing: let a: [i32; 5] = [1, 2, 3, 4, 5];
+ - multiple elements in one array: let a = [3; 5];
+ - accessing index via 0 indexing: a[0];
+ - !! runtime error if accessing index beyond array size
