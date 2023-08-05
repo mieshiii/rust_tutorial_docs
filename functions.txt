@@ -1,0 +1,27 @@
+Main function
+ - we define a function in Rust by entering fn followed by a function name and a set of parentheses. 
+The curly brackets tell the compiler where the function body begins and ends.
+ - fn main() {
+      println!("Hello, world!");
+
+      another_function();
+  }
+
+  fn another_function() {
+      println!("Another function.");
+  }
+
+ - call any function we’ve defined by entering its name followed by a set of parentheses
+Parameters
+ - fn main() {
+    another_function(5);
+  }
+
+  fn another_function(x: i32) {
+      println!("The value of x is: {x}");
+  } 
+Statements and Expressions
+ - Statements are instructions that perform some action and do not return a value.
+ - Expressions evaluate to a resultant value.
+
+ 
