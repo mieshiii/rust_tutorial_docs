@@ -40,4 +40,11 @@ use if in a let statement
     }
 repetition with loops
  - rust has 3 kinds of loops: loop, while, and for
+ - using loop:
+    - fn main() {
+        loop {
+            println!("again!");
+        }
+    }
+ - can place the break keyword within the loop to tell the program to stop the loop
  - 
