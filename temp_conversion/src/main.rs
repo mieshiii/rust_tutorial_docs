@@ -1,28 +1,37 @@
 // import io lib
-use std::io::{self, Read};
+use std::io;
 
 fn main() {
     println!("Please choose the conversion: C or F.");
 
-    let mut input: [u8; 1] = [0u8; 1];
-    io::stdin().read_exact(&mut input).expect("Failed to read line");
-    let character: u8 = input[0];
+    let mut input: String = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line");
   
-    if character == b'C' {
+    if input == "C\n" {
         println!("Converting C to F");
         println!("Input the value to convert:");
-        // input type is a String(?)
-        let mut val: String = String::new();
-        io::stdin().read_line(&mut val).expect("Failed to read line");
+        // input type is string, parsed and conerted to float
+        let mut temp: String = String::new();
+        io::stdin().read_line(&mut temp).expect("Failed to read line");
 
         // convert String to float
-        let input_val: f64 = val.trim().parse().expect("Invalid input");
+        let input_val: f64 = temp.trim().parse().expect("Invalid input");
         let converted_val: f64 = (input_val * 9.0/5.0) + 32.0;
 
-        println!("Converted value in F is:{}", converted_val);
+        println!("Converted value in Fahrenheit is: {}", converted_val);
 
-    } else if character == b'F' {
+    } else if input == "F\n" {
         println!("Converting F to C");
+        println!("Input the value to convert:");
+        // input type is string, parsed and conerted to float
+        let mut temp: String = String::new();
+        io::stdin().read_line(&mut temp).expect("Failed to read line");
+        // convert String to float
+        let input_val: f64 = temp.trim().parse().expect("Invalid input");
+        let converted_val: f64 = (input_val - 32.0) * (5.0/9.0);
+
+        println!("Converted value in Celsius is: {}", converted_val);
+
     } else {
         println!("Invalid input!");
     }
